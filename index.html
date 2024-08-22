@@ -10,6 +10,12 @@
       crossorigin="anonymous"
     ></script>
     <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- tailwind and daisyui CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -24,9 +30,11 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              bg1: "#ABEF5F",
+              bg2: "linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);",
             },
             fontFamily: {
-              Poppins: "Poppins",
+              Manrope: "Manrope",
             },
           },
         },
@@ -34,8 +42,84 @@
     </script>
   </head>
   <body>
-    <header>
-      <h1>hello!</h1>
+    <!-- header section start -->
+    <header class="w-11/12 mx-auto bg-bg2">
+      <!-- navbar section -->
+      <nav class="mt-5">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-xl"
+              ><i
+                class="fa-solid fa-arrow-right -rotate-45 rounded-full p-1 border-[1px] bg-bg1"
+              ></i
+              >Rinterio</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex text-lg font-medium">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-[#737373] hover:text-black font-semibold">
+                <a>Home</a>
+              </li>
+              <li class="text-[#737373] hover:text-black font-semibold">
+                <a>Services</a>
+              </li>
+              <li class="text-[#737373] hover:text-black font-semibold">
+                <a>Portfolio</a>
+              </li>
+              <li class="text-[#737373] hover:text-black font-semibold">
+                <a>Blogs</a>
+              </li>
+              <li class="text-[#737373] hover:text-black font-semibold">
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-5">
+            <a class="hidden sm:block" href=""
+              ><i
+                class="fa-solid fa-magnifying-glass bg-white p-3 border-[1px] rounded-[56px] shadow-md"
+              ></i
+            ></a>
+            <a class="hidden sm:block" href=""
+              ><i
+                class="fa-solid fa-cart-shopping bg-white p-3 border-[1px] rounded-[56px] shadow-md"
+              ></i
+            ></a>
+            <a
+              class="hidden sm:block text-center py-3 btn bg-bg1 font-bold rounded-[32px]"
+              >Book Consult
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 rounded-full p-1 border-[1px] bg-black text-white"
+              ></i
+            ></a>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-5"
+              >
+                <li class="text-[#737373] hover:text-black font-semibold">
+                  <a>Home</a>
+                </li>
+                <li class="text-[#737373] hover:text-black font-semibold">
+                  <a>Services</a>
+                </li>
+                <li class="text-[#737373] hover:text-black font-semibold">
+                  <a>Portfolio</a>
+                </li>
+                <li class="text-[#737373] hover:text-black font-semibold">
+                  <a>Blogs</a>
+                </li>
+                <li class="text-[#737373] hover:text-black font-semibold">
+                  <a>Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main></main>
     <footer></footer>

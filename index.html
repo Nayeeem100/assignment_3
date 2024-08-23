@@ -289,7 +289,7 @@
             class="w-11/12 mx-auto grid sm:grid-row-4 sm:grid-flow-col grid-col-1 grid-flow-row gap-1 mb-10"
           >
             <div
-              class="col-span-3 flex sm:flex-row flex-col justify-center items-center border-[1px] shadow-lg rounded-lg"
+              class="col-span-3 flex sm:flex-row flex-col justify-center items-center border-[1px] shadow-lg rounded-lg gap-2"
             >
               <div>
                 <img src="assets/img1.png" alt="" />
@@ -320,10 +320,12 @@
           <div
             class="w-11/12 mx-auto grid sm:grid-row-4 sm:grid-flow-col grid-col-1 grid-flow-row gap-3"
           >
-            <div class="border-[1px] p-2 shadow-lg rounded-lg">
+            <div class="w-full border-[1px] p-2 shadow-lg rounded-lg">
               <img src="assets/img3.png" alt="" />
             </div>
-            <div class="cal-span-2 flex p-2 border-[1px] shadow-lg rounded-lg">
+            <div
+              class="cal-span-2 flex sm:flex-row flex-col justify-center p-2 border-[1px] shadow-lg rounded-lg"
+            >
               <div class="">
                 <img src="assets/img4.png" alt="" />
               </div>
@@ -351,7 +353,7 @@
         </div>
       </section>
     </main>
-    <!-- from section -->
+    <!-- form section -->
     <section class="bg-fbg pb-14">
       <!-- text contenar -->
       <div class="text-center my-14 pt-14">
@@ -365,7 +367,7 @@
           featuring weathered wood, sleek metal accents.
         </p>
       </div>
-      <!-- from -->
+      <!-- form -->
       <div class="text-center">
         <form action="">
           <input
@@ -391,13 +393,13 @@
           />
           <br />
           <input
-            class="w-3/6 h-40 rounded-2xl m-3"
+            class="sm:w-3/6 sm:h-40 w-11/12 h-40 rounded-2xl m-3"
             type="text"
             placeholder="Write your message here"
           />
         </form>
         <button
-          class="text-center py-3 px-[350px] btn bg-bg1 font-bold rounded-[32px]"
+          class="text-center py-3 sm:px-[350px] px-5 btn bg-bg1 font-bold rounded-[32px]"
         >
           Send Mail
           <i
@@ -406,6 +408,33 @@
         </button>
       </div>
     </section>
-    <footer></footer>
+    <footer class="bg-black text-white text-center">
+      <a class="btn btn-ghost text-xl mt-14 mb-5"
+        ><i
+          class="fa-solid fa-arrow-right -rotate-45 rounded-full p-1 border-[1px] bg-bg1"
+        ></i
+        >Rinterio</a
+      >
+      <p class="text-[#737373] mb-5">
+        The barn house captivates with its blend of rustic charm and modern
+        sophistication, <br />
+        featuring weathered wood, sleek metal accents.
+      </p>
+      <div class="flex sm:flex-row flex-col gap-3 justify-around mb-10">
+        <h6 class="text-[#E9E9E9]">Home</h6>
+        <h6 class="text-[#E9E9E9]">Services</h6>
+        <h6 class="text-[#E9E9E9]">Portfolio</h6>
+        <h6 class="text-[#E9E9E9]">Blogs</h6>
+        <h6 class="text-[#E9E9E9]">Contact Us</h6>
+      </div>
+      <button
+        class="text-center py-3 px-6 btn bg-bg1 font-bold rounded-[32px] mb-20"
+      >
+        Send Mail
+        <i
+          class="fa-solid fa-arrow-right -rotate-45 rounded-full p-1 border-[1px] bg-black text-white"
+        ></i>
+      </button>
+    </footer>
   </body>
 </html>
